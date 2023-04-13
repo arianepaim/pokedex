@@ -1,0 +1,27 @@
+.about {
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.about p {
+  margin-bottom: 1.5em;
+  max-width: 500px;
+  margin: 0 auto 1.5em;
+  line-height: 1.4;
+}
+.about img {
+  width: 500px;
+  height: 300px;
+}
+
+@media (max-width: 415px) {
+  .about img {
+    width: 250px;
+    height: 150px;
+  }
+}
+

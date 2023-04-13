@@ -1,0 +1,54 @@
+.card {
+  background: linear-gradient(135deg, #00f, #0ff, #0f0, #ff0, #f00);
+  animation: moveHolo 5s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 1em;
+  margin-bottom: 2em;
+  width: 23%;
+  border-radius: 1em;
+  border: 2px solid #e33d33;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+  background-color: #e1d0d0;
+  color: #0e0d0d;
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+}
+.card .id {
+  margin: 1em 0;
+  background-color: #e33d33;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .title {
+  text-transform: capitalize;
+  margin-bottom: 1em;
+  font-size: 1.4em;
+}
+
+.card .btn {
+  text-decoration: none;
+  background-color: #0f0f0f;
+  color: #f9f5f5;
+  padding: 0.7em 1.2em;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.card .btn:hover {
+  background-color: #e33d33;
+  color: #101010;
+}

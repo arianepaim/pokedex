@@ -1,0 +1,26 @@
+* {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  
+  background: linear-gradient(to bottom, #f2f5f4, #161616);
+}
+@media (min-height: 740px) {
+  .main-container {
+    height: 75vh;
+  }
+}
+@media (min-height: 895px) {
+  .main-container {
+    height: 80vh;
+  }
+}
+@media (min-height: 1100px) {
+  .main-container {
+    height: 85vh;
+  }
+}
