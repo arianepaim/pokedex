@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 export async function getStaticProps() {
-  const maxPokemons = 251;
+  const maxPokemons = 200;
   const api = "https://pokeapi.co/api/v2/pokemon/";
 
   const res = await fetch(`${api}/?limit=${maxPokemons}`);
@@ -23,7 +23,7 @@ export async function getStaticProps() {
 
 export default function Home({ pokemons }) {
   const [searchTerm, setSearchTerm] = useState("");
-  const [visiblePokemons, setVisiblePokemons] = useState(16);
+  const [visiblePokemons, setVisiblePokemons] = useState(12);
   const [sortOption, setSortOption] = useState("");
 
   const filteredPokemons = pokemons.filter((pokemon) =>
@@ -48,7 +48,7 @@ export default function Home({ pokemons }) {
   };
 
   const handleLoadMore = () => {
-    setVisiblePokemons(visiblePokemons + 16);
+    setVisiblePokemons(visiblePokemons + 12);
   };
 
   const handleSortOptionChange = (event) => {
