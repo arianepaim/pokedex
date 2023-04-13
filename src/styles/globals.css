@@ -6,7 +6,7 @@
 }
 
 .main-container {
-  
+  min-height: 70vh;
   background: linear-gradient(to bottom, #f2f5f4, #161616);
 }
 
